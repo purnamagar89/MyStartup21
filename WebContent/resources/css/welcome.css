@@ -1,0 +1,8 @@
+@CHARSET "ISO-8859-1";
+
+.logout {
+	position: absolute;
+	color: white;
+	top: 15px;
+	right: 15px;
+}

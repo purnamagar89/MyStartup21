@@ -1,0 +1,203 @@
+@CHARSET "ISO-8859-1";
+
+.right {
+	position: absolute;
+	right: 1px;
+	padding: 2px;
+}
+
+.header {
+	background-color: #4d4dff;
+	color: white;
+	width: 98.1%;
+	position: relative;
+	height: 6px;
+	left: -8px;
+	padding: 20px;
+}
+
+div.main_logout {
+	width: 10px;
+	left: 95%;
+	top: 3px;
+	position: absolute;
+	padding: 2px;
+}
+
+div.main_admin {
+	position: absolute;
+	right: 15px;
+	top: 80px;
+}
+
+div.errorMsg {
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	top: 45px;
+	left: 500px;
+	width: 310px;
+	height: 50px;
+	padding: 14px 18px;
+}
+
+div.login {
+	text-align: center;
+	position: relative;
+	top: 40px;
+	left: 500px;
+	width: 240px;
+	height: 350px;
+	border: 1px solid lightgrey;
+	border-radius: 8px;
+	padding: 15px 60px;
+}
+
+div.createaccount {
+	text-align: center;
+	position: relative;
+	top: 56px;
+	left: 500px;
+	width: 240px;
+	height: 350px;
+	border: 1px solid lightgrey;
+	border-radius: 8px;
+	padding: 15px 60px;
+}
+
+div.main_div {
+	text-align: center;
+	position: relative;
+	top: 56px;
+	left: 500px;
+	width: 240px;
+	height: 350px;
+}
+
+.logout {
+	position: absolute;
+	color: white;
+	top: 15px;
+	right: 15px;
+}
+
+.home {
+	position: absolute;
+	right: 15px;
+	top: 50px;
+}
+
+.color {
+	color: blue;
+}
+
+.error {
+	font-size: small;
+	color: red;
+}
+
+p.error {
+	color: red;
+	font-size: medium;
+}
+
+.valid {
+	font-size: small;
+	color: blue;
+}
+
+.account_login_button {
+	width: 228px;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: blink;
+	border-radius: 5px;
+	color: white;
+	background-color: #2e5cb8; font-weight : bold;
+	font-size: 12px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.account_create_button {
+	width: 228px;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: blink;
+	color: white;
+	border-radius: 5px;
+	background-color: #2e5cb8;
+	font-weight: bold;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.user-creater-button {
+	width: 228px;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: blink;
+	color: white;
+	border-radius: 5px;
+	background-color: #2e5cb8;
+	font-weight: bold;
+	font-size: 12px;
+	cursor: pointer;
+}
+ 
+
+li#toolbar-contents {
+	list-style-type:none;
+	float: left;
+}
+
+  li#toolbar-contents a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 13px 15px;
+	text-decoration: none;
+}
+
+li#toolbar-contents a:hover {
+	background-color: #3333ff;
+}
+
+
+ 
+.header_contents {
+	position: absolute;
+	display: inline-block;
+	top: -16px;
+	left: 20px;
+}
+
+.item_search {
+	position: absolute;
+	display: inline-block;
+	top: 11px;
+	left: 30%;
+}
+
+.item_serch_input[type=text] {
+	width: 350px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: 12px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 4px 6px 4px 6px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+#item_search_btn:hover {
+	background-color: #3333ff;
+	border: 1px solid #3333ff;
+}
+
+.shop-departments-dropdown {
+	left: 77%;
+}
