@@ -13,13 +13,13 @@
 	<context:component-scan base-package="com.anrup.web.service"></context:component-scan>
 	<context:component-scan base-package="com.anrup.web.ldo"></context:component-scan>
 
-	<beans profile="production">
+	<!-- <beans profile="production"> -->
 		<jee:jndi-lookup jndi-name="jdbc/EasyShop" id="dataSource"
 			expected-type="javax.sql.DataSource">
 		</jee:jndi-lookup>
 
 
-		<security:authentication-manager>
+		<!-- <security:authentication-manager>
 			<security:authentication-provider>
 				<security:jdbc-user-service
 					data-source-ref="dataSource" />
@@ -76,8 +76,8 @@
 			<security:form-login authentication-failure-url="/login?error=true"
 				login-page="/login" />
 			<security:csrf />
-		</security:http>
+		</security:http> -->
 
-	</beans>
-
+	<!-- </beans>
+ -->
 </beans>

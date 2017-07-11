@@ -58,32 +58,32 @@
 <body>
 	<div class="header">
 
-		 <div class="header_contents">
+		<div class="header_contents">
 			<ul>
 				<li id="toolbar-contents"><a href="#home">Home</a></li>
 				<li id="toolbar-contents"><a href="#news">News</a></li>
-				<li id="toolbar-contents"> <a href="#contact">Contact</a></li>
+				<li id="toolbar-contents"><a href="#contact">Contact</a></li>
 				<li id="toolbar-contents"><a href="#about">About</a></li>
 			</ul>
 		</div>
- 
+
 		<div class="departments-dropdown">
 			<ul class="outer">
-				<li><a href="#"><span class="dept_color">Departments &#9662;</span></a>
+				<li><a href="#"><span class="dept_color">Departments
+							&#9662;</span></a>
 					<ul id="inner" class="dropdown">
 						<li><a href="${pageContext.request.contextPath}/">All</a></li>
 						<li><a
 							href="${pageContext.request.contextPath}/electronicsItems">Electronics</a></li>
 						<li><a href="${pageContext.request.contextPath}/clothItems">Clothes</a></li>
-					</ul>
-				</li>
+					</ul></li>
 			</ul>
-						
+
 		</div>
 
 		<div class="dropdown">
-		<button class="dropbtn" onclick="myFunction()">&#9776;</button>
-		<p>
+			<button class="dropbtn" onclick="myFunction()">&#9776;</button>
+			<p>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="${pageContext.request.contextPath}/admin">Admin</a> <a
 					href="#setting">Setting</a> <a
@@ -102,43 +102,6 @@
 	</div>
 
 
-	<div class="items">
 
-		<table>
-			<tr style="background-color: #8080ff; color: white; height: 30px">
-				<th class="row-Id">Id</th>
-				<th class="row-name">Name</th>
-				<th class="row-image">Image</th>
-				<th class="row-price">Price</th>
-				<th class="row-quantity" colspan="2">Quantity</th>
-			</tr>
-
-			<c:forEach var="item" items="${items}">
-				<tr>
-
-					<td><c:out
-							value="${item.getItem_id()}"></c:out></td>
-
-					<td><c:out value="${item.getItem_name()}"></c:out></td>
-					<td><img
-						src="${pageContext.request.contextPath}/getImage?item_id=${item.getItem_id()}"
-						width="130px" /></td>
-
-					<td><c:out value="${item.getItem_price()}"></c:out></td>
-					<td>
-						<form action="${pageContext.request.contextPath}/quantityprocess">
-							<input type="hidden" name="item_id" value="${item.getItem_id()}" />
-							<input type="hidden" name="item_name"
-								value="${item.getItem_name()}" /> <input type="hidden"
-								size="10" name="item_price" value="${item.getItem_price()}" />
-							<input class="quantity-input-text" type="text" name="item_quantity" />
-							<td><input class="add-to-cart-button" type="submit"
-								value="AddToCart"></td>
-						</form>
-					</td>
-				</tr>
-			</c:forEach>
-		</table>
-	</div>
 </body>
 </html>

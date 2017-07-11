@@ -23,8 +23,6 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public String goToHomePage(Model model) {
-		List<Item> allItems = itemService.currentItems();
-		model.addAttribute("items", allItems);
 		return "home";
 	}
 	
